@@ -126,3 +126,9 @@ footer {
   font-size: .8em;
   text-transform: uppercase;
 }
+
+#award {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
