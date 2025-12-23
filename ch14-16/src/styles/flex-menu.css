@@ -32,7 +32,7 @@ section {
   width: 240px;
   display: flex;
   flex-direction: column;
-  flex-basis: auto;
+  flex: auto;
 }
 .title {
   background-color: #783f27;
@@ -46,4 +46,7 @@ section {
   width: 100%;
   text-align: center;
   margin-top: auto;
+}
+.photo{
+    order: -1;
 }
