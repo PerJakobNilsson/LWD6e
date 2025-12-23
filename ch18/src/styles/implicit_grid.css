@@ -1,0 +1,18 @@
+dl {
+}
+dt,
+dd {
+  padding: 0.5em;
+  margin: 0;
+}
+dt {
+  background-color: rgb(223, 240, 163);
+  font-weight: bold;
+}
+dd {
+  background-color: rgba(223, 240, 163, 0.3);
+}
+.label {
+  font: normal 0.75em sans-serif;
+  color: #666;
+}
