@@ -1,4 +1,10 @@
 dl {
+    display: grid;
+    /* grid-template-columns: repeat(2, 8em 1fr); */
+    gap: 0.5em;
+    /* grid-auto-rows: 6em; */
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, 3em 1fr);
 }
 dt,
 dd {
