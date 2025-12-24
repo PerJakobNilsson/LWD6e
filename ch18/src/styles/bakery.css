@@ -13,20 +13,43 @@ body {
   margin: 0;
 }
 
+/* Grid rules */
+#container {
+  display: grid;
+  grid-template-rows: auto auto 5em;
+  grid-template-columns: minmax(25em, 1fr) 16em;
+  grid-template-areas: 
+  "banner banner"
+  "main hours"
+  "footer footer";
+}
+header {grid-area: banner;}
+main {grid-area: main;}
+aside {grid-area: hours;}
+footer {grid-area: footer;}
+
 /* link styles */
 a {
   text-decoration: none;
   border-bottom: 1px dotted;
-  padding-bottom: .2em;
+  padding-bottom: 0.2em;
 }
-a:link, a:visited { color: #DC6903; }
-a:focus, a:hover, a:active { color: #F9AB33; }
+a:link,
+a:visited {
+  color: #dc6903;
+}
+a:focus,
+a:hover,
+a:active {
+  color: #f9ab33;
+}
 
 /* header styles */
 header {
   color: white;
-  background:  url(/ch14-16/assets/images/croissants_banner.jpg) no-repeat center center;
-  background-size: cover; 
+  background: url(/assets/images/croissants_banner.jpg) no-repeat center
+    center;
+  background-size: cover;
   text-align: center;
   height: 15em;
 }
@@ -40,9 +63,10 @@ header p {
 }
 
 /* nav styles */
-nav, footer {
+nav,
+footer {
   font-family: verdana, sans-serif;
-  background-color: #783F27;
+  background-color: #783f27;
 }
 nav ul {
   margin: 0;
@@ -51,35 +75,38 @@ nav ul {
   display: flex;
   justify-content: center;
 }
-nav ul li a:link, nav ul li a:visited {
-  color: #F9AB33;
+nav ul li a:link,
+nav ul li a:visited {
+  color: #f9ab33;
 }
-nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+nav ul li a:focus,
+nav ul li a:hover,
+nav ul li a:active {
   color: #fff;
 }
 nav ul li {
-  font-size: .8em;
+  font-size: 0.8em;
   text-transform: uppercase;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
 }
 nav ul li a {
   display: block;
   border: 1px solid;
   border-radius: 6px;
-  padding: .5em 1em;
-  margin: .5em;
+  padding: 0.5em 1em;
+  margin: 0.5em;
 }
 
 /* main "products" styles */
 main {
-  font-family: 'Stint Ultra Expanded', cursive;
+  font-family: "Stint Ultra Expanded", cursive;
   background-color: white;
   line-height: 1.8em;
   color: #555;
   padding: 1em;
-  border: double 4px #EADDC4;
+  border: double 4px #eaddc4;
   border-radius: 25px;
-  margin: 2.5%;
+  margin: 20px;
 }
 main img {
   float: left;
@@ -94,46 +121,43 @@ img[src*="muffin"] {
   shape-outside: ellipse(135px 95px at 50% 50%);
 }
 h2 {
-  font-family: 'Stint Ultra Expanded', cursive;
+  font-family: "Stint Ultra Expanded", cursive;
 }
 h3 {
   text-transform: uppercase;
-  letter-spacing: .2em;
-  color: #7A0002;
+  letter-spacing: 0.2em;
+  color: #7a0002;
   border-top: 1px solid;
   border-left: 3px solid;
-  padding-left: 1em;  
+  padding-left: 1em;
   margin-top: 2.5em;
 }
 p.more {
   font-family: verdana, sans-serif;
   text-transform: uppercase;
-  font-size: .8em;
-  clear:left;
+  font-size: 0.8em;
+  clear: left;
 }
 
 /* aside "hours" styles */
 aside {
   background: url(/assets/images/scallop.png) repeat-y left top;
-  background-color: #F6F3ED;
+  background-color: #f6f3ed;
   padding: 1em;
   padding-left: 45px;
-  border: double 4px #EADDC4;
-  border-top-right-radius: 25px;
-  margin: 1em 2.5% 0 10%;
 }
 
 /* misc styles */
 footer {
-  color: #EADDC4;
+  color: #eaddc4;
   text-align: center;
-  font-size: .8em;
+  font-size: 0.8em;
   padding: 1em;
 }
 .day {
-  color: #783F27;
+  color: #783f27;
   font-family: verdana, sans-serif;
-  font-size: .8em;
+  font-size: 0.8em;
   text-transform: uppercase;
 }
 
