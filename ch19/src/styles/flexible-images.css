@@ -17,3 +17,7 @@ h2 {
   color: #d1633c;
   font-size: 1em;
 }
+
+#test {
+    max-width: 700px;
+}
