@@ -43,6 +43,7 @@ img {
   border-radius: 0.5rem;
   background-color: papayawhip;
   padding: 1rem;
+  container: card / inline-size;
 }
 
 .content-wrapper {
@@ -54,23 +55,14 @@ img {
   margin: 0.25rem 1rem;
 }
 
-/* 
-@container (width < 400px) {
-.wrapper {
-	flex-direction: column;
-}
-.card-content > h2, .card-content p {
-	margin: .25rem 0rem;
-}
-.card-content 
-{
-	margin-top: 1rem;
-}
+@container card (inline-size < 400px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
 }
 
-@container (width > 700px) {
-	h2 {
-		font-size: 4cqi;
-	}
+@container card (inline-size > 540px) {
+  h2 {
+    font-size: 3cqi;
+  }
 }
-*/
