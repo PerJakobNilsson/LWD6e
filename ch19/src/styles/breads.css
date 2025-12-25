@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  font-size: 100%;
+}
+
+body {
+  font: 1rem/1.25 "Stint Ultra Expanded", cursive;
+  color: #555;
+  margin: 1.5rem;
+}
+
+h1 {
+  font: normal 1.5rem/1.75 "Stint Ultra Expanded", cursive;
+  border-top: 1px solid darkorange;
+  border-bottom: 1px solid darkorange;
+  padding: 0.5rem 0;
+}
+
+h2 {
+  font: bold 1rem/1.25 Verdana, sans-serif;
+  margin-top: 0;
+}
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 0.5rem;
+}
+
+.bread-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  flex: 1 1 320px;
+  border: 1px solid darkorange;
+  border-radius: 0.5rem;
+  background-color: papayawhip;
+  padding: 1rem;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.description > * {
+  margin: 0.25rem 1rem;
+}
+
+/* 
+@container (width < 400px) {
+.wrapper {
+	flex-direction: column;
+}
+.card-content > h2, .card-content p {
+	margin: .25rem 0rem;
+}
+.card-content 
+{
+	margin-top: 1rem;
+}
+}
+
+@container (width > 700px) {
+	h2 {
+		font-size: 4cqi;
+	}
+}
+*/
