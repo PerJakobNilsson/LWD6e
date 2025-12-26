@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <title>Toast Guide</title>
     <script>
-      // Code will go here
+      const saved_theme = localStorage.getItem("saved_theme");
+      if ( saved_theme === "dark") {
+        document.documentElement.classList.add("dark");
+      } 
     </script>
     <style>
       * {

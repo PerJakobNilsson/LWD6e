@@ -19,10 +19,25 @@ function updateButton() {
   $toggle.ariaLabel = label;
   $toggle.title = label;
 }
+function saveTheme() {
+  let theme = "light";
+  if ($html.classList.contains("dark")) {
+    theme = "dark";
+  }
+  localStorage.setItem("saved_theme", theme);
+}
 function toggleTheme() {
   $html.classList.toggle("dark");
   updateButton();
+  saveTheme();
 }
 $toggle.addEventListener("click", toggleTheme);
-updateButton();
-document.body.appendChild($toggle);
+function initialize() {
+    let preferred = localStorage.getItem("saved_theme");
+    if (preferred === "dark") {
+        $html.classList.add("dark");
+    }
+  updateButton();
+  document.body.appendChild($toggle);
+}
+initialize();
